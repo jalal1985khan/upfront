@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+body{
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+.thin{
+  font-weight: 100;
+}
+.up-bg{
+background-color: #000;  
+}
+.menu{
+  font-family: 'BenchNine', sans-serif;
+}
+.nav-link.active{
+  color: #F40F34 !important;
+  background-color: rgb(0, 0, 0) !important;
+}
+.nav-link{
+  color:#fff !important;
+}
+.h-count{
+  font-size:30px;
+  font-weight:600;
+  color:#F40F34;
+}
+.h-text{
+  font-size: 17px;
+    font-weight: 200;
+}
+.h-btn{
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #F40F34;
+  padding: 10px 10px 10px 10px;
+  color:#fff !important;
+  border: 0px;  
+}
