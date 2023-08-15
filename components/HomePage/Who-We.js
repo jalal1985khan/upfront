@@ -72,9 +72,9 @@ function Who() {
                       
       </Carousel>
 </Col>
-              <Col>
+<Col className="d-flex flex-column justify-content-center">
                   <Container>
-                  <h1 className="text-center fs-bold">Our Reach</h1>
+                  <h1 className="text-center fw-bold">Our Reach</h1>
                   <Row>
                   <Col lg={4} className="d-flex flex-column align-items-center">
                               <Image 

@@ -4,8 +4,61 @@
 body{
   font-family: 'Roboto Condensed', sans-serif !important;
 }
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll{
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+@keyframes scroll {
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translateY(46px);
+  }
+  }
+
+
 .thin{
   font-weight: 100;
+}
+.highlight{
+  color: #F40F34 !important; 
+}
+.line{
+ color:#fff; 
+}
+.h-card{
+  color: #fff;
+  font-weight: 300;
+  font-size: 17px;  
+}
+.f-width{
+  width:600px;
 }
 .up-bg{
 background-color: #000;  
