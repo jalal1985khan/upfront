@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import { TwitterShareButton,FacebookShareButton, WhatsappShareButton  } from 'react-share';
 import { AiFillTwitterSquare, AiFillFacebook, AiOutlineWhatsApp } from "react-icons/ai";
 import { usePathname } from 'next/navigation'
+import Link from 'next/link'
 
 
 function Share() {
@@ -38,10 +39,10 @@ url={murl}
 </Container>
 <Container className="d-flex flex-column mt-5 mb-5">
 <p>More in This Section</p>
-<Button className="my-1 s-button">About Us</Button>                      
-<Button className="my-1 s-button">Our Reach</Button>                      
-<Button className="my-1 s-button">Apparel, Fashion & Textile</Button>                      
-<Button className="my-1 s-button">Informal Workforces</Button>                      
+<Link href="/why-well-being" className="my-1 s-button">About Us</Link>                      
+<Link href="/our-reach" className="my-1 s-button">Our Reach</Link>                      
+<Link href="/apparel-fashion-textile" className="my-1 s-button">Apparel, Fashion & Textile</Link>                      
+<Link href="/our-reach" className="my-1 s-button">Informal Workforces</Link>                      
 </Container>
       </>
   )
