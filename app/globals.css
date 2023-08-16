@@ -34,7 +34,9 @@ body{
   color: #000 !important;
   background-color: var(--bs-dropdown-link-hover-bg);
 }
-
+.icon-scroll:hover{
+  cursor: pointer;
+}
 .icon-scroll,
 .icon-scroll:before{
   position: absolute;
@@ -206,4 +208,15 @@ font-weight: 600;
 }
 .accordion-header{
   border:1px solid #000;
+}
+.scroll{
+  
+    position: 'fixed';
+    bottom: 50;
+    right: 30;
+    cursor: 'pointer';
+    transitionDuration: '0.2s';
+    transitionTimingFunction: 'linear';
+    transitionDelay: '0s';
+  
 }

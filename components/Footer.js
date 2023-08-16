@@ -1,6 +1,8 @@
 import React from 'react'
 import { Col, Container,Row } from 'react-bootstrap'
 import Image from 'next/image';
+import ScrollToTop from "react-scroll-to-top";
+
 
 function Footer() {
     return (
@@ -34,6 +36,8 @@ function Footer() {
                     <Col className="text-white thin" lg={2}>Our Team</Col>
                 </Row>
             </Container>
+            
+            <ScrollToTop smooth />
         </Container>
     )
 }

@@ -2,8 +2,17 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function HeroBanner() {
+  function handleScroll() {
+    window.scroll({
+      top: document.body.offsetHeight,
+      left: 0, 
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <>
 <Container className="up-bg" fluid>
@@ -22,7 +31,7 @@ Millions of front line workers contribute immense value to our society, economy 
 </Container>
 </Col>  
 <Col className="d-flex justify-content-center mt-5 mb-5">
-<div className='icon-scroll'></div>
+<div className='icon-scroll' onClick={handleScroll}></div>
 </Col>                  
 </Row>
                   
