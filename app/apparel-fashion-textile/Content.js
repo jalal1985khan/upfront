@@ -14,7 +14,9 @@ function About() {
 <p className="thin h-text">For almost two decades, we have partnered with over 31 brands and organisations, built our presence in over 351 factories across 14 states in India and 14 countries across the Asian and African regions through technical support on building capacities, programmes, systems and workplace policies. We have reached over 350,000 workers and their families ( 60% are women). We have directly implemented our empowerment programmes among factories in India and have been providing technical support in the Asian and African regions.</p>
                         <Image src="/images/apparel_work.jpeg"
                             width={800}
-                            height={500} />
+                            height={500}
+                            className="img-fluid"
+                        />
 </Col>
 <Col>
 <Share/>

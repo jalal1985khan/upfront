@@ -4,6 +4,20 @@
 body{
   font-family: 'Roboto Condensed', sans-serif !important;
 }
+.h-line{
+  opacity: 1 !important;
+    color: red !important;
+    position: relative;
+        top: 5px;
+        border: none;
+        height: 5px;
+        background: #F40F34;
+        margin-bottom: 20px;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
 .dropdown-menu.show {
   background-color: #000;
 }
@@ -124,4 +138,72 @@ background-color: #000;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;  
+}
+.t-card{
+width:218px;
+margin: 50px;
+}
+.t-card img{
+  height: 250px;
+}
+.c-title{
+ color:#F40F34 !important; 
+ font-family: "Roboto Condensed", Sans-serif !important;
+}
+.card-body{
+padding:12px 0px 0px 0px !important;  
+}
+.profile-icon{
+  margin-top: -56px;
+  fill: #F40F34;
+  background: white;
+}
+.c-height{
+  background-color: #E0343D;
+  height:400px;
+}
+.d-height{
+  background-color: #E55E70;
+  height:400px;
+}
+.e-height{
+  background-color: #F093A0;
+  height:400px;
+}
+.carousel-caption {
+  position: absolute;
+  right: 24%!important;
+  bottom: 1.25rem;
+  left: 24% !important;
+  padding-top: o;
+  padding-bottom: 54px !important;
+  color: #fff;
+  text-align: left !important;
+}
+.owl-next, .owl-prev{
+font-size:60px !important;
+color:#fff;  
+}
+.owl-nav {
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -134px;
+}
+.accordion-item{
+  border-width: 3px;
+  border-color: #000000;
+
+}
+.accordion-header button{
+font-size:18px;
+font-weight: 600;  
+}
+.accordion-button:not(.collapsed) {
+  color: red !important;
+  background-color: #fff !important;
+}
+.accordion-header{
+  border:1px solid #000;
 }
