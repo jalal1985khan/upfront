@@ -1,8 +1,8 @@
 'use client'
 import Header from '../../components/Header'
 import Hero from '../apparel-fashion-textile/HeroBannerWell'
-import About from '../apparel-fashion-textile/about'
 import Footer from '../../components/Footer'
+import Content from '../apparel-fashion-textile/Content'
 
 
 export default function about() {
@@ -10,7 +10,7 @@ export default function about() {
     <>
       <Header />
       <Hero />
-      <About />
+      <Content />
       <Footer/>
     </>
   )
