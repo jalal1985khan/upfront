@@ -31,11 +31,11 @@ function Header() {
             
           </ul>
         </li>
-        <li className="nav-item"><a href="/our-programmes" className="nav-link">OUR PROGRAMMES</a></li>
+        <li className="nav-item"><Link href="/our-programmes" className="nav-link">OUR PROGRAMMES</Link></li>
         <li className="nav-item"><Link href="/communityactioncollab" className="nav-link">COMMUNITY ACTION COLLAB</Link></li>
-            <li className="nav-item"><a href="#" className="nav-link">STORIES (BLOG)</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">MEDIA</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">CAREERS & CONTACT</a></li>
+            <li className="nav-item"><Link href="#" className="nav-link">STORIES (BLOG)</Link></li>
+            <li className="nav-item"><Link href="#" className="nav-link">MEDIA</Link></li>
+            <li className="nav-item"><Link href="#" className="nav-link">CAREERS & CONTACT</Link></li>
       </ul>
     </header>
   </div>
