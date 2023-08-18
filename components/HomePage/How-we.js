@@ -6,6 +6,7 @@ import Image from 'next/image';
 function How() {
   return (
     <Container className="up-bg pt-5 pb-3" fluid>
+      <Container>
       <Row >
       <Col className="d-flex flex-column justify-content-center">
                   <Container>
@@ -14,7 +15,7 @@ function How() {
                   </Col>
           </Row>
           <Row className="pt-5">
-<Col lg={4} className="px-5 pt-4">
+<Col lg={4} className="px-0 pt-4">
  <div className="h-card" >  
   <div class="card-body">
     <p class="card-text"><span className="highlight">We create</span> and enable partnerships and solutions because we believe that no single agency or approach is adequate to resolve complex problems</p>
@@ -27,7 +28,7 @@ function How() {
                       />
 </div>
 </Col>
-<Col lg={4} className="px-5 pt-4">
+<Col lg={4} className="px-0 pt-4">
  <div className="h-card" >  
   <div class="card-body">
     <p class="card-text"><span className="highlight">We empower</span> workforces, particularly women, by strengthening capacities of individuals, institutions, systems, stakeholders for equity and equality</p>
@@ -41,7 +42,7 @@ function How() {
                       />
 </div>
 </Col>
-<Col lg={4} className="px-5 pt-4">
+<Col lg={4} className="px-0 pt-4">
  <div className="h-card" >  
   <div class="card-body">
     <p class="card-text"><span className="highlight">We promote</span> enabling, safe, healthy, and inclusive workplace, community, systems, values, culture to ensure workforce health and well-being</p>
@@ -55,10 +56,8 @@ function How() {
                       />
 </div>
 </Col>              
-
-
-          </Row>
-    </Container>
+</Row>
+    </Container></Container>
   )
 }
 

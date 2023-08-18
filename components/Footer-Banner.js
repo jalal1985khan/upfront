@@ -5,8 +5,9 @@ import { Container, Row ,Col} from 'react-bootstrap'
 
 function FooterBanner() {
   return (
-    <Container fluid className="up-bg">
-          <div className="d-flex flex-wrap">
+      <Container className="up-bg" fluid>
+         
+          <div className="d-flex flex-wrap flex-lg-nowrap">
               <Col className="mcol"><Image
                   src="/images/f-banner-1.png"
                   width={151}

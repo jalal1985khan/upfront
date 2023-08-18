@@ -267,10 +267,14 @@ ul.nav.nav-pills.menu {
 .m-line {
   border-bottom: 1px solid #242323;
 }
+.mimg {
+  width: 100%;
+  height: auto;
+}
 @media (max-width: 768px) {
 .m-wrap{
     flex-wrap: wrap !important;
-    background:red;
+    
     width: 33.3% !important;
     display: flex;
     flex-direction: row;

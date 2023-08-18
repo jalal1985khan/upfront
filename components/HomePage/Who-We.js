@@ -10,7 +10,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Who() {
   return (
-      <>
+      <><Container>
           <Row>
               <Col lg={4} sm={12} xs={12} className="d-flex flex-column justify-content-center">
                   <Container>
@@ -179,7 +179,7 @@ function Who() {
                       </Row>
                       </Container>
               </Col>
-          </Row>
+          </Row></Container>
     </>
   )
 }
