@@ -132,6 +132,16 @@ background-color: #000;
   color:#fff !important;
   border: 0px;  
 }
+.b-btn{
+  background-color: red !important;
+  border: 0px !important;
+  border-radius: 50px !important; 
+}
+.b-bg{
+background-color: #F2F2F2 !important;  
+border-radius:0px !important;
+height:220px !important;
+}
 .s-button{
  color:#F40F34 !important;
  background-color: #ffffff !important;
@@ -144,6 +154,10 @@ padding: 16px;
 }
 .b-bottom{
   border-bottom:2px solid #F40F34;
+}
+.c-img{
+width:100%; 
+height:auto; 
 }
 .h-banner{
   height:600px;
@@ -229,4 +243,45 @@ font-weight: 600;
     transitionTimingFunction: 'linear';
     transitionDelay: '0s';
   
+}
+.m-wrap{
+  flex-direction: row;
+  width:100%;
+  background-color: green;
+}
+.btn-humburger{
+  background: #fff !important;
+    border-radius: 50px !important;
+    height: 55px;
+    width: 55px;
+}
+.logo-img{
+  width:300px;
+}
+.bg-body-tertiary{
+  padding:0px !important;  
+}
+ul.nav.nav-pills.menu {
+  margin-right: 120px;
+}
+.m-line {
+  border-bottom: 1px solid #242323;
+}
+@media (max-width: 768px) {
+.m-wrap{
+    flex-wrap: wrap !important;
+    background:red;
+    width: 33.3% !important;
+    display: flex;
+    flex-direction: row;
+}
+.mimg {
+  width: 77px;
+  height: auto;
+}
+.navbar-brand {
+margin-left: -124px;
+
+}
+
 }

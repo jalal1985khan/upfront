@@ -35,16 +35,16 @@ function Content() {
           <h2 className="fw-bold mt-4 mb-4">Approaches and Methods</h2>
           <Row>
 <Col lg={9} >
-<div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<div id="carouselExampleCaptions" className="carousel slide">
+  <div className="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-<div class="carousel-inner">
-<div class="carousel-item active c-height">
+<div className="carousel-inner">
+<div className="carousel-item active c-height">
 
-      <div class="carousel-caption d-none d-md-block">
+      <div className="carousel-caption d-none d-md-block">
 <h5 className="fs-1">Workforce empowerment</h5>
 <ul>
 <li className="fs-5">Building voice & agency</li>
@@ -53,9 +53,9 @@ function Content() {
 </ul>
       </div>
     </div>
-    <div class="carousel-item d-height">
+    <div className="carousel-item d-height">
       
-      <div class="carousel-caption d-none d-md-block">
+      <div className="carousel-caption d-none d-md-block">
 <h5 className="fs-1">Enabling safe and inclusive systems</h5>
 <ul>
 <li className="fs-5">Strengthen workplace systems</li>
@@ -64,8 +64,8 @@ function Content() {
 </ul>
       </div>
     </div>
-<div class="carousel-item e-height">  
-<div class="carousel-caption d-none d-md-block">
+<div className="carousel-item e-height">  
+<div className="carousel-caption d-none d-md-block">
 <h5 className="fs-1">Collaborative, ecosystems-based worker centric approach</h5>
 <ul>
 <li className="fs-5">Collaborations</li>
@@ -76,13 +76,13 @@ function Content() {
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
   </button>
 </div>
 <h2 className="mt-4 mb-4">Our Domains of Work</h2>                  
@@ -93,42 +93,42 @@ function Content() {
           margin={10}
           {...options}
         >
-          <div class="item">
+          <div className="item">
             <img
               alt="img1"
               src="/images/slider-1.png"
               className="partners"
             />
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-2.png"
               className="partners"
             />
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-3.png"
               className="partners"
             />
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-4.png"
               className="partners"
             />
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-5.png"
               className="partners"
             />
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-6.png"
@@ -136,7 +136,7 @@ function Content() {
             />
             
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-7.png"
@@ -144,7 +144,7 @@ function Content() {
             />
             
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-8.png"
@@ -152,7 +152,7 @@ function Content() {
             />
             
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-9.png"
@@ -160,7 +160,7 @@ function Content() {
             />
             
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-10.png"
@@ -168,7 +168,7 @@ function Content() {
             />
             
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-11.png"
@@ -176,7 +176,7 @@ function Content() {
             />
             
           </div>
-          <div class="item">
+          <div className="item">
           <img
               alt="img1"
               src="/images/slider-12.png"

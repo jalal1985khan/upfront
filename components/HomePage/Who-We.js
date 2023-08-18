@@ -12,7 +12,7 @@ function Who() {
   return (
       <>
           <Row>
-              <Col className="d-flex flex-column justify-content-center">
+              <Col lg={4} sm={12} xs={12} className="d-flex flex-column justify-content-center">
                   <Container>
                   <h1 className="text-center fw-bold">Who We Are</h1>
                   <p className="text-center h-text">We respectfully work with front line workers and the “systems” by changing mindsets, behaviours and practices; by improving skills, financial security, processes and services; by building agency, ensuring voices and choices; by establishing partnerships and collaborations.</p>
@@ -22,7 +22,7 @@ function Who() {
                     
                   </Container>
               </Col>
-              <Col>
+              <Col lg={4} sm={12} xs={12} >
                   <Carousel
                       indicators={false}
                       interval={1200}
@@ -72,11 +72,11 @@ function Who() {
                       
       </Carousel>
 </Col>
-<Col className="d-flex flex-column justify-content-center">
+<Col lg={4} sm={12} xs={12}  className="d-flex flex-column justify-content-center">
                   <Container>
                   <h1 className="text-center fw-bold">Our Reach</h1>
                   <Row>
-                  <Col lg={4} className="d-flex flex-column align-items-center">
+                  <Col lg={4} sm={6} xs={6}  className="d-flex flex-column align-items-center">
                               <Image 
                                   src="/images/icon-1.png"
                                   width="40"
@@ -87,8 +87,8 @@ function Who() {
                                   className="h-count" />
                               <p className="text-center">Apparel sector<br/>workforces</p>
                           </Col>
-                          <Col lg={4} className="d-flex flex-column align-items-center"></Col>
-                          <Col lg={4} className="d-flex flex-column align-items-center">
+                          <Col lg={4} sm={6} xs={4} className="d-flex flex-column align-items-center d-none d-lg-block"></Col>
+                          <Col lg={4} sm={6} xs={6} className="d-flex flex-column align-items-center">
                           <Image 
                                   src="/images/icon-2.png"
                                   width="40"
@@ -102,7 +102,7 @@ function Who() {
                           </Col>
                   </Row>
                   <Row>
-                  <Col lg={4} className="d-flex flex-column align-items-center">
+                  <Col lg={4} sm={4} xs={4} className="d-flex flex-column align-items-center">
                           <Image 
                                   src="/images/icon-3.png"
                                   width="40"
@@ -114,7 +114,7 @@ function Who() {
                           />
                           <p className="text-center">Men<br/>workforces</p>
                           </Col>
-                          <Col lg={4} className="d-flex flex-column align-items-center">
+                          <Col lg={4} sm={4} xs={4} className="d-flex flex-column align-items-center">
                           <Image 
                                   src="/images/icon-4.png"
                                   width="40"
@@ -126,7 +126,7 @@ function Who() {
                           />
                           <p className="text-center">Women<br/>workforce</p>
                           </Col>
-                          <Col lg={4} className="d-flex flex-column align-items-center">
+                          <Col lg={4} sm={4} xs={4} className="d-flex flex-column align-items-center">
                           <Image 
                                   src="/images/icon-5.png"
                                   width="40"
@@ -140,7 +140,7 @@ function Who() {
                           </Col>
                   </Row>
                   <Row>
-                  <Col lg={4} className="d-flex flex-column align-items-center">
+                  <Col lg={4} sm={4} xs={4} className="d-flex flex-column align-items-center">
                           <Image 
                                   src="/images/icon-6.png"
                                   width="40"
@@ -152,7 +152,7 @@ function Who() {
                           />
                           <p className="text-center">Factories with<br/>interventions</p>
                           </Col>
-                          <Col lg={4} className="d-flex flex-column align-items-center">
+                          <Col lg={4} sm={4} xs={4} className="d-flex flex-column align-items-center">
                           <Image 
                                   src="/images/icon-7.png"
                                   width="40"
@@ -164,7 +164,7 @@ function Who() {
                           />
                           <p className="text-center">Organization Partnered<br/>with (for informal sector)</p>
                           </Col>
-                          <Col lg={4} className="d-flex flex-column align-items-center">
+                          <Col lg={4} sm={4} xs={4} className="d-flex flex-column align-items-center">
                           <Image 
                                   src="/images/icon-8.png"
                                   width="40"

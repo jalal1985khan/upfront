@@ -15,7 +15,7 @@ function HeroBanner() {
 
   return (
     <>
-<Container className="up-bg" fluid>
+<Container className="up-bg overflow-hidden" fluid>
 <Row className="d-flex flex-column">
 <Col className="d-flex justify-content-center mb-2 mt-2">
                       <Image
