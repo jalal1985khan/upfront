@@ -287,5 +287,44 @@ ul.nav.nav-pills.menu {
 margin-left: -124px;
 
 }
-
+.t-card {
+  width: 100% !important;
+  margin: 0px !important;
+}
+.offcanvas {
+  background-color: #000 !important;
+  color:#fff !important;
+}
+.menu-off{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30% !important;
+  line-height: 60px;
+}
+.menu-off ul li{
+list-style-type: none;
+}
+ul.nav.nav-pills.menu {
+  margin-right: 0px !important;
+  display: contents;
+}
+.dropdown-menu.show {
+  width: 100%;
+}
+.dropdown-item {
+  color: #ffff !important;
+  font-size: 26px !important;
+  padding: 12px !important;
+  border: 1px solid #fff !important;
+}
+.offcanvas.offcanvas-start {
+  width:100% !important;
+}
+.offcanvas-header .btn-close {
+background-color: #fff;;
+}
+.m-footer{
+  display: flex;
+  line-height: 40px;  
+}
 }

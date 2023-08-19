@@ -18,7 +18,7 @@ function Media() {
 <Row>
 <Col lg={9}>
 <Row >
-<Col lg={4}>
+<Col lg={4} className="pt-3">
 <div className="card p-3 b-bg border-0">
   <div className="card-body d-flex flex-column justify-content-between">
 <h5 className="card-title">Life Skills Initiatives Are Effective Tools to Achieve Women Empowerment</h5>
@@ -29,7 +29,7 @@ function Media() {
   </div>
 </div>             
 </Col>
-<Col lg={4}>
+<Col lg={4} className="pt-3">
 <div className="card p-3 b-bg border-0">
   <div className="card-body d-flex flex-column justify-content-between">
     <h5 className="card-title">Safe City: Analysis of Services for Gender-Based Violence in Bengaluru, India</h5>
@@ -40,7 +40,7 @@ function Media() {
   </div>
 </div>             
 </Col>
-<Col lg={4}>
+<Col lg={4} className="pt-3">
 <div className="card p-3 b-bg border-0">
   <div className="card-body d-flex flex-column justify-content-between">
     <h5 className="card-title">ICRW Impact Report of P.A.C.E. Program</h5>
@@ -54,7 +54,7 @@ function Media() {
 </Row> 
 
 <Row className="pt-4">
-<Col lg={4}>
+<Col lg={4} className="pt-3">
 <div className="card p-3 b-bg border-0">
   <div className="card-body d-flex flex-column justify-content-between">
     <h5 className="card-title">Women in Factories: South Asia FT Endline Report</h5>
@@ -65,7 +65,7 @@ function Media() {
   </div>
 </div>             
 </Col>
-<Col lg={4}>
+<Col lg={4} className="pt-3">
 <div className="card p-3 b-bg border-0">
   <div className="card-body d-flex flex-column justify-content-between">
     <h5 className="card-title">Women in Factories: South Asia AT Endline Report</h5>
@@ -76,7 +76,7 @@ function Media() {
   </div>
 </div>             
                   </Col>
-                  <Col lg={4}>
+<Col lg={4} className="pt-3">
 <div className="card p-3 b-bg border-0">
   <div className="card-body d-flex flex-column justify-content-between">
     <h5 className="card-title">Women in Factories: Brief: Financial Literacy, Life Goals and Sexual Harassment</h5>
@@ -90,7 +90,7 @@ function Media() {
 </Row>
 
 <Row className="pt-4">
-<Col lg={4}>
+<Col lg={4} className="pt-3">
 <div className="card p-3 b-bg border-0">
   <div className="card-body d-flex flex-column justify-content-between">
     <h5 className="card-title">Women in Factories: Brief: Impact of Foundational Training on Locus of Control</h5>
@@ -101,7 +101,7 @@ function Media() {
   </div>
 </div>             
 </Col>
-<Col lg={4}>
+<Col lg={4} className="pt-3">
 <div className="card p-3 b-bg border-0">
   <div className="card-body d-flex flex-column justify-content-between">
     <h5 className="card-title">Women in Factories: Brief: Interaction between Training and Supervisor Support on Reproductive Health Knowledge in India</h5>
@@ -112,7 +112,7 @@ function Media() {
   </div>
 </div>             
 </Col>
-<Col lg={4}>
+<Col lg={4} className="pt-3">
 <div className="card p-3 b-bg border-0">
   <div className="card-body d-flex flex-column justify-content-between">
     <h5 className="card-title">Women in Factories: Brief: Structural Model of Gender and Empowerment at the Workplace</h5>
@@ -125,7 +125,7 @@ function Media() {
 </Col>
 </Row>
 <Row className="pt-4">
-<Col lg={4}>
+<Col lg={4} className="pt-3">
 <div className="card p-3 b-bg border-0">
   <div className="card-body d-flex flex-column justify-content-between">
     <h5 className="card-title">Women in Factories: Brief: Impact of Foundational Training on Housework Childcare</h5>

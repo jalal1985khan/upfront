@@ -19,9 +19,9 @@ function Footer() {
                 <p className="text-white thin pt-3">UpFront is an initiative of the Catalyst Group. Copyright © 2022-23. All Rights Reserved.</p>
                 <hr className="line"/>
             </Container>
-            <Container >
-                <Row className="d-flex justify-content-center pt-3">
-                <Col lg={2}><Link href="/" className= {router == "/" ? "active text-white thin" : "text-white thin"}>Home Page</Link></Col>
+            <Container className="m-footer">
+                <Row className="d-flex justify-content-center pt-3 " >
+                <Col lg={2} ><Link href="/" className= {router == "/" ? "active text-white thin" : "text-white thin"}>Home Page</Link></Col>
                     <Col lg={2}><Link href="/why-well-being" className= {router == "/why-well-being" ? "active text-white thin" : "text-white thin"}>Why Workforce Well-Being?</Link></Col>
                     <Col  lg={2}><Link href="/communityactioncollab" className= {router == "/communityactioncollab" ? "active text-white thin" : "text-white thin"}>#COVIDActionCollab</Link></Col>
                     <Col  lg={2}><Link href="/tools-resources" className= {router == "/tools-resources" ? "active text-white thin" : "text-white thin"}>Media</Link></Col>
