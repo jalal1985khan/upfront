@@ -8,70 +8,94 @@ import configData from "config.json";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Link from 'next/link'
 import Share from '../../components/Share'
-
-
-
+import { FaSpinner } from "react-icons/fa";
+import ContactForm from '../../utils/ContactForm'
 
 function ContainerExample() {
 
-    const [post, setPost] = useState(null);
-    const [yourName, setName] = useState(null);
-    const [yourEmail, setEmail] = useState(null);
-    const [yourSubject, setSubject] = useState(null);
-    const [yourMessage, setMessage] = useState(null);
-    const [spinner, setSpinner] = useState(false);
+const [name, setName] = useState('')
+const [email, setEmail] = useState('')
+const [message, setMessage] = useState('')
+const [submitted, setSubmitted] = useState(false)
+const [spinner, setSpinner] = useState(false);
+const [btnHide, setDisabled] = useState(false);
+    
     const [loading, setLoading] = useState(false);
-    const [disable, setDisabled] = useState(false);
-    const [errrname, setErrName] = useState(null);
-    const [errremail, setErrEmail] = useState(null);
-    const [errrsubject, setErrSubject] = useState(null);
+    
     const [success, setSuccess] = useState(true);
 
+
+
     
-    const handleSubmit = event => {
-        // 👇️ prevent page refresh
-        event.preventDefault();
-        alert(setName);
-
-    };
-
-    function createPost() {
-
-        setSpinner(true);
-        axios.post(`${configData.SERVER_FROM}contact-form-7/v1/contact-forms/a2fdf88/feedback`,
-            {
-                'your-name': { yourName },
-                'your-email': { yourEmail },
-                'your-subject': { yourSubject },
-                'your-message': { yourMessage },
-            }, {
-            headers: {
-                "Content-Type": 'multipart/form-data',
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        //console.log('Sending')
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        if (!validateName(name)) {
+            e.preventDefault();
+            console.log('Name field is empty')
+        }
+        function validateName(name) {
+            return name;
+          }
+          if (!validateName(message)) {
+            e.preventDefault();
+            console.log('message field is empty')
+        }
+        function validateName(message) {
+            return message;
+        }
+        if (!validateEmail(email)) {
+            e.preventDefault();
+            console.log('this is not valid email address')           
+        }
+        else {
+            let data = {
+                name,
+                email,
+                message
             }
-
-        })
-            .then((response) => {
-                setPost(response.data.message);
-                
-                // setErrMessage(response.data['invalid_fields'][1]['message']);
-                const msg = response.data.status;
-                if (msg == 'mail_sent') {
-                    setLoading(true);
-                    setSpinner(false);
-                    setSuccess(false);
+            //console.log(data)
+            fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }).then((res) => {
+                console.log('Response received')
+                setSpinner(true)
+                setDisabled(true)
+                if (res.status === 200) {
+                    console.log('Response succeeded!')
+                    setSubmitted(true)
+                    setName('')
+                    setEmail('')
+                    setMessage('')
+                    setSuccess(false)
+                    setLoading(true)
+                    setSpinner(true)
+                    setDisabled(true)
 
                 }
-                
-                else{
-                 //setErrName(response.data['invalid_fields'][0]['message']);
-                 //setErrEmail(response.data['invalid_fields'][1]['message']);
-                 //setErrSubject(response.data['invalid_fields'][2]['message']);
-                    setSpinner(false);
-                    setLoading(true);
-            }
-                 console.log(response.data)
-            });
-    }
+            })  
+
+        }
+        function validateEmail(email) {
+        // Use regex or a validation library for email validation
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+       
+        
+
+        
+    };
+
+    
 
 
   return (
@@ -81,93 +105,25 @@ function ContainerExample() {
 <hr className="h-line"/>              
 </Container>
 <Container className="mt-5 mb-4">
-<Image src="/images/contact_banner.jpeg" width={800} height={300} className="img-fluid c-img"/>
+              <Image src="/images/contact_banner.jpeg" width={800} height={300} className="img-fluid c-img" alt="upfront global contact"
+              
+              priority={false}
+              />
 </Container>
       <Container className="pt-5">
         <Row>
           <Col lg={9}>
             <Row>
-              <Col>
-                <h3 className="fw-bold">Get in Touch</h3>
-<p className="thin h-text">For more information email <Link href="mailto:contactus@upfront.org">contactus@upfront.org</Link> or leave a message below.</p>
-{success &&
-                    <form
-                        onSubmit={handleSubmit}
-                        style={{ margin: '20px' }}>
+<Col>      
+<ContactForm/>              
+              </Col>
+              
 
-                        <div className="mb-3 mt-3">
-                            {/* <label htmlfor="yourName" className="form-label text-white"><span className="errors">*</span>Your Name:</label> */}
-                            <input
-                                //required
-                                type='text'
-                                className="form-control"
-                                id="yourName"
-                                name='yourName'
-                                placeholder="Ravi Kumar"
-                                value={yourName}
-                                onChange={event => setName(event.target.value)}
-                            />
-                            <span className="r_error">{errrname}</span>
-                        </div>
-
-                        <div className="mb-3 mt-3">
-                            {/* <label htmlfor="yourEmail" className="form-label text-white"><span className="errors">*</span>Your Email:</label> */}
-                            <input
-                                //required
-                                type='email'
-                                className="form-control"
-                                id="yourEmail"
-                                name='yourEmail'
-                                placeholder="test@test.com"
-                                value={yourEmail}
-                                onChange={event => setEmail(event.target.value)}
-
-                            /><span className="r_error">{errremail}</span></div>
-
-                            <div className="mb-3 mt-3">
-                                {/* <label htmlfor="yourSubject" className="form-label text-white"><span className="errors">*</span>Subject:</label> */}
-                                <input
-                                    //required
-                                    type='text'
-                                    className="form-control"
-                                    id="yourSubject"
-                                    name='yourSubject'
-                                    placeholder="your subject"
-                                    value={yourSubject}
-                                    onChange={event => setSubject(event.target.value)}
-
-                                /><span className="r_error">{errrsubject}</span>
-                                </div>
-
-                                <div className="mb-3 mt-3">
-                                {/* <label htmlfor="yourMessage" className="form-label text-white"><span className="errors">*</span>Message:</label> */}
-                                <textarea
-                                    //required
-                                    rows="4" 
-                                    cols="50"
-                                    className="form-control"
-                                    id="yourMessage"
-                                    name='yourMessage'
-                                    placeholder="your Message"
-                                    value={yourMessage}
-                                    onChange={event => setMessage(event.target.value)}
-
-                                />
-                                </div>
-                                {spinner && <div className="spinner-border text-light" role="status"/>}
-                            <button type='submit' className='btn btn-primary register ' onClick={createPost}>Send Message</button>
-                            
-
-                    </form>
-                          }
-                          
-{loading && <h1 className="reg-success mt-4">{post}</h1>}                  
-</Col>
             </Row>
-<Row className="pt-5 pb-5">
+<Row className="pt-5 pb-5 ">
 <h2>Careers</h2>
 <h5>Currently Available Positions</h5>
-<Col lg={6}>                
+<Col lg={6} className="mt-4">                
 <div className="card p-3 b-bg border-0">
 <div className="card-body d-flex flex-column justify-content-between">
 <h5 className="card-title">Technical Specialist</h5>  
@@ -178,7 +134,7 @@ function ContainerExample() {
   </div>
 </div> 
 </Col>
-<Col lg={6}>                
+<Col lg={6} className="mt-4">                
 <div className="card p-3 b-bg border-0">
 <div className="card-body d-flex flex-column justify-content-between">
 <h5 className="card-title">Senior Program Manager</h5>  

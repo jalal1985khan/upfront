@@ -3,14 +3,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { AiOutlineAlignLeft } from "react-icons/ai";
-import { Col, Container, Row} from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
+import Seo from '../components/seo/NextSeo'
 
-
-
-function Header() {
+function Header({ title, description, MetaImage }) {
   const router = usePathname();
+  const currentURL = window.location.href;
+  
+  
   return (
-    <>
+<>
+<Seo title={title} description={description} metaImage={MetaImage} path={currentURL} />     
 <nav class="navbar bg-body-tertiary m-line">
 <div class="container-fluid up-bg">
 <Link href="/" className="navbar-brand">
@@ -21,9 +24,7 @@ className="img-fluid"/>
       <ul className="nav nav-pills menu">
         <li className="nav-item"><Link href="/how-we-work" className= {router == "/how-we-work" ? "active nav-link" : "nav-link"} >HOW WE WORK</Link></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          ABOUT
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</a>
           <ul class="dropdown-menu">
             <li><Link  className= {router == "/why-well-being" ? "active dropdown-item" : "dropdown-item"} href="/why-well-being">WHY WORKFORCE WELL-BEING?</Link></li>
                 <li><Link className= {router == "/apparel-fashion-textile" ? "active dropdown-item" : "dropdown-item"} href="/apparel-fashion-textile">APPAREL, FASHION & TEXTILE</Link></li>

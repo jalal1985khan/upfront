@@ -20,7 +20,7 @@ function HeroBanner() {
 <Col className="d-flex justify-content-center mb-2 mt-2">
                       <Image
                           src="/images/hero_banner.png"
-                          width={500}
+                          width={600}
                           height={410}
                           
                       />

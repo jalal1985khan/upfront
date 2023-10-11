@@ -6,25 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
-    
+    "lint": "next lint",
+    "preview-email": "email dev"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-email/container": "^0.0.8",
+    "@react-email/html": "^0.0.4",
+    "@react-email/section": "^0.0.9",
+    "@react-email/text": "^0.0.5",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.1",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.16",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
     "next": "^13.4.18",
+    "next-seo": "^6.1.0",
+    "nodemailer": "^6.9.4",
     "react": "18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
+    "react-email": "^1.9.4",
     "react-icons": "^4.10.1",
+    "react-loader-spinner": "^5.4.5",
     "react-owl-carousel": "^2.3.3",
     "react-scroll-to-top": "^3.0.0",
     "react-share": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.9"
   }
 }
