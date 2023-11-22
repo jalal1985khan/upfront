@@ -157,6 +157,12 @@ background-color: #F2F2F2 !important;
 border-radius:0px !important;
 height:285px !important;
 }
+.btn-upfront{
+  color: #FFFFFF !important;
+  background-color: #EA4335 !important;
+  border-radius: 5px 5px 5px 5px !important;
+  padding: 20px 50px 20px 50px !important; 
+}
 .s-button{
  color:#F40F34 !important;
  background-color: #ffffff !important;

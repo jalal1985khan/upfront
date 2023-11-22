@@ -52,7 +52,7 @@ const Post = () => {
                            </Col>
                        </Row>          
           </Container>
-          <Container className="mb-4"><Link href="/blog" className="btn btn-primary">View All Stories</Link></Container>
+          <Container className="mb-4"><Link href="/blog" className="btn btn-upfront">View All Stories</Link></Container>
           </>
       ))}
     </div>
