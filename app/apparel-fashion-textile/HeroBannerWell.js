@@ -14,11 +14,12 @@ function HeroBanner() {
 <p className="fs-4 thin">The apparel and textile industry in India is the second largest employer providing direct employment to 45 million people and 100 million people in the allied sector.</p>
 </Container>
                   </Col>
-<Col className="d-flex justify-content-center mb-2 mt-2">
+<Col className="d-flex justify-content-center mb-2 mt-2" xs={12} lg={6}>
 <Image
 src="/images/apparel_banner.jpeg"
 width={700}
-height={500}
+              height={500}
+              className="img-fluid"
 />
 </Col>
 </Row>

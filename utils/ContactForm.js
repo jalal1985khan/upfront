@@ -53,7 +53,7 @@ const ContactForm = () => {
 
         try {
             const response = await axios.post(
-                'https://beta.upfront.global/wp-json/contact-form-7/v1/contact-forms/11/feedback',
+                'https://beta.upfront.global/wp-json/contact-form-7/v1/contact-forms/3664/feedback',
                 formData,
                  {
                     headers: {
@@ -148,7 +148,7 @@ Send Message
                    
                     </Col></Row>
 {error && <p className="error">{error}</p>}
-</form>
+</form> 
             ) : (
                     <Container>
                         <h2>Thank you for you interest</h2>

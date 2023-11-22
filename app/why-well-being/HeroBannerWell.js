@@ -14,11 +14,12 @@ function HeroBanner() {
 <p className="fs-4 thin">We are a global south entity, part of the Catalyst Group of organisations, driving significant impactful sustainable solutions, particularly for front line workers and their ecosystems. We are based in India and have a work presence in 11 countries.</p>
 </Container>
                   </Col>
-<Col className="d-flex justify-content-center mb-2 mt-2">
+<Col className="d-flex justify-content-center mb-2 mt-2" xs={12} lg={6}>
 <Image
 src="/images/about_us_banner.jpeg"
 width={700}
-height={500}
+              height={500}
+              className="img-fluid"
 />
 </Col>
 </Row>

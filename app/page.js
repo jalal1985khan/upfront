@@ -1,5 +1,6 @@
 'use client'
 import Header from '../components/Header'
+import Offcanvas  from '../components/OffCanvas'
 import Hero from '../components/HomePage/HeroBanner'
 import Who from '../components/HomePage/Who-We'
 import How from '../components/HomePage/How-we'
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <>
       <Header title={pageTitle} description={pageDescription} MetaImage={MetaImage} />
+
       <Hero />
       <Who />
       <How />

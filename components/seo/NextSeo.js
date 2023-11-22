@@ -18,7 +18,8 @@ function NextSeo({title, description, path ,metaImage}) {
         <meta property="og:url" content={path} />
         <meta property="og:site_name" content={title} />
         <meta property="og:image" content={metaImage} />
-        <meta name="twitter:card" content="summary_large_image" /></head>
+        <meta name="twitter:card" content="summary_large_image" />
+      </head>
       </>
   )
 }
