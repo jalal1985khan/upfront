@@ -64,10 +64,14 @@ const SuccessStories = () => {
   <div className="card-body d-flex flex-column justify-content-between">
                         <h5 className="card-title" dangerouslySetInnerHTML={{ __html:post['title']['rendered'] }}/>
                         <p className="card-text" dangerouslySetInnerHTML={{ __html:post['excerpt']['rendered'] }}/>
-<div className="d-flex justify-content-between">
-{post.media_url ? (
-                      // Render media URL if not empty
-                      <Image src={post.media_url} alt="Media" width={100} height={100} />
+                        <div className="d-flex justify-content-between">
+                        
+{post.acf.media_url ? (
+                            // Render media URL if not empty
+                    <Link href={post.acf.media_url} target="_blank" className="btn btn-primary b-btn">
+                        <AiOutlineArrowRight size={28} />
+                      </Link>
+                      
                     ) : (
                       // Render post slug if media URL is empty
                       <Link href={post['slug']} target="_blank" className="btn btn-primary b-btn">
