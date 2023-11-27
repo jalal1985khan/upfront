@@ -4,12 +4,14 @@ import Image from 'next/image';
 import ScrollToTop from "react-scroll-to-top";
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 
 
 function Footer() {
     const router = usePathname();
     return (
-        <Container className="up-bg pb-5 pt-5" fluid>
+        <Container className="up-bg pt-5 pb-2" fluid>
             <Container className="text-center">
                 <Image
                     src="/images/logo.svg"
@@ -41,6 +43,10 @@ function Footer() {
             </Container>
             
             <ScrollToTop smooth />
+            <Container className="text-center mt-5">
+                <Link href="https://www.linkedin.com/showcase/upfrontcg/"><FaLinkedin size={30} className="f_social mx-3"/></Link>
+                <Link href="https://twitter.com/UpfrontCG"><FaSquareXTwitter size={30} className="f_social"/></Link>
+            </Container>
         </Container>
     )
 }

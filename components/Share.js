@@ -4,6 +4,7 @@ import { TwitterShareButton,FacebookShareButton, WhatsappShareButton  } from 're
 import { AiFillTwitterSquare, AiFillFacebook, AiOutlineWhatsApp } from "react-icons/ai";
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 
 function Share() {
@@ -18,7 +19,7 @@ url={murl}
 title="Check out this iHateReading custom repository "
 className="my-1 s-button btn btn-primary px-2"
 >
-<AiFillTwitterSquare size={28} /> Twitter                                     
+<FaSquareXTwitter size={25} /> Twitter                                     
 </TwitterShareButton>
 
 <FacebookShareButton 

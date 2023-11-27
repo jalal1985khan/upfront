@@ -62,7 +62,7 @@ function Who() {
                       <Carousel.Item>
           <Image
             className="d-block w-100"
-            src="/images/slider-4.jpeg"
+            src="/images/slider-11.jpeg"
             alt="Image One"
             width={400}
             height={600}
